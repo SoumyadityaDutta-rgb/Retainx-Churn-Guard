@@ -45,8 +45,9 @@ The project is organized as follows:
 
 ### 1. Clone the repository
 ```bash
-git clone <repository-url>
-cd <repository-folder>
+    git clone https://github.com/SoumyadityaDutta-rgb/RETAINX-Churn-Prediction.git
+    cd RETAINX-Churn-Prediction
+
 ```
 
 ### 2. Install Dependencies
@@ -100,3 +101,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
