@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Streamlit
+**/.streamlit/secrets.toml
+
+# Model files (optional, depending on size, but good to ignore large binaries)
+*.pkl
+!models/*.pkl
+
+# Data
+*.csv
+data/
+
+# Environment
+.env
+.venv
+env/
+venv/
