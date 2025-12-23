@@ -4,6 +4,7 @@ joblib
 google-generativeai
 xgboost
 catboost
-scikit-learn
+scikit-learn==1.6.1
 matplotlib
 seaborn
+
