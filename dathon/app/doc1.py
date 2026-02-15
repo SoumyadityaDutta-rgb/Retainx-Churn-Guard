@@ -219,7 +219,7 @@ try:
         st.stop()
         
     genai.configure(api_key=api_key)
-    llm = genai.GenerativeModel("gemini-2.0-flash")
+    llm = genai.GenerativeModel("gemini-2.0-flash-001")
 except Exception as e:
     st.error(f"Error configuring Gemini API: {e}")
     st.stop()
@@ -445,6 +445,7 @@ if st.button("🔮 Predict Churn & Get Insights"):
         st.write(response.text)
     except Exception as e:
         st.error(f"An error occurred during prediction: {e}")
+
 
 
 
