@@ -96,6 +96,20 @@ st.markdown("""
         background-color: transparent !important;
         color: #F8FAFC !important;
     }
+    div[data-testid="stNumberInput"] input {
+        background-color: rgba(255, 255, 255, 0.05) !important;
+        color: #F8FAFC !important;
+    }
+
+    div[data-testid="stNumberInput"] div[data-baseweb="input"] {
+        background-color: rgba(255, 255, 255, 0.05) !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        border-radius: 8px !important;
+    }
+
+    div[data-testid="stNumberInput"] div {
+        background-color: rgba(255, 255, 255, 0.05) !important;
+    }
 
     
     /* Focus States */
@@ -431,5 +445,6 @@ if st.button("🔮 Predict Churn & Get Insights"):
         st.write(response.text)
     except Exception as e:
         st.error(f"An error occurred during prediction: {e}")
+
 
 
