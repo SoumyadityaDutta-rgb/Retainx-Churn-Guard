@@ -1,7 +1,7 @@
 streamlit
 pandas
 joblib
-google-generativeai
+google-genai
 xgboost
 catboost
 scikit-learn
