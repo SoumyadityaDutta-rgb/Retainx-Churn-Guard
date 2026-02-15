@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
-from google import genai   
+import google.genai as genai
 import os
 import datetime
 
@@ -101,3 +101,4 @@ if st.button("🔮 Predict Churn & Get Insights"):
 
     except Exception as e:
         st.error(f"An error occurred during prediction: {e}")
+
