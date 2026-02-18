@@ -188,7 +188,7 @@ st.markdown("""
 st.markdown("""
     <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 2rem;">
         <div style="font-size: 3rem; margin-right: 15px;">🤖</div>
-        <h1 style="text-align: center; margin: 0; padding: 0;">RETAINX: ML-based Churn Predictor & Advisor</h1>
+        <h1 style="text-align: center; margin: 0; padding: 0;">RETAINX: Churn Predictor & Advisor</h1>
     </div>
 """, unsafe_allow_html=True)
 
@@ -377,12 +377,8 @@ with col_right:
     # Metric Cards
     st.markdown("""
     <div style="background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.1); margin-bottom: 20px;">
-        <h4 style="margin: 0; color: #94a3b8; font-size: 0.9rem;">Model Accuracy</h4>
-        <p style="margin: 0; font-size: 1.5rem; font-weight: bold; color: #38bdf8;">82.0%</p>
-    </div>
-    <div style="background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.1); margin-bottom: 20px;">
-        <h4 style="margin: 0; color: #94a3b8; font-size: 0.9rem;">Churn Threshold</h4>
-        <p style="margin: 0; font-size: 1.5rem; font-weight: bold; color: #8b5cf6;">0.50</p>
+        <h4 style="margin: 0; color: #94a3b8; font-size: 0.9rem;">Model ROC-AUC</h4>
+        <p style="margin: 0; font-size: 1.5rem; font-weight: bold; color: #38bdf8;">0.86</p>
     </div>
     """, unsafe_allow_html=True)
 
@@ -445,7 +441,6 @@ if st.button("🔮 Predict Churn & Get Insights"):
         st.write(response.text)
     except Exception as e:
         st.error(f"An error occurred during prediction: {e}")
-
 
 
 
